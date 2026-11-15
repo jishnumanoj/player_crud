@@ -1,0 +1,42 @@
+#api call for listing all players
+###
+GET http://127.0.0.1:8000/players/
+Accept: application/json
+
+#api call for creating new player
+###
+POST http://127.0.0.1:8000/players/
+Content-Type: application/json
+
+{
+    "name":"kohli",
+    "age":39,
+    "sport":"dee",
+    "role":"batter",
+    "country":"india"
+}
+
+#api call for retrieving a player
+###
+GET http://127.0.0.1:8000/players/2/
+Accept: application/json
+
+#api call for updating a player
+###
+PUT http://127.0.0.1:8000/players/2/
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "sachin",
+    "age": 47,
+    "sport": "cricket",
+    "role": "batter",
+    "country": "india"
+}
+
+#api call for deleting a student
+###
+DELETE  http://127.0.0.1:8000/players/2/
+
+
